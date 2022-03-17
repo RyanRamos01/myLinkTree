@@ -16,11 +16,8 @@
     text-transform: uppercase;
 }
 
-body, html{
-    height: 100vh;
-}
-
 body{
+    display: flex;
     background-color: var(--background-color);
     font-family: var(--font-style);
 }
@@ -28,8 +25,10 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    width: 450px;
-    margin: 20px auto;
+    width: 90%;
+    max-width: 450px;
+    height: 90%;
+    margin: 20px auto 0 auto;
     background: var(--background-color);
     border: solid 3px var(--font-color);
     border-color: var(--font-color);
@@ -39,8 +38,10 @@ body{
 .image img{
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    max-height: 250px;
     margin: 15px auto 15px auto;
     border: solid 4px var(--font-color);
     border-color: var(--font-color);
@@ -50,14 +51,16 @@ body{
 
 .linksContent{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .linksContent a.link{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 90%;
+    max-width: 350px;
     height: 100px;
     text-align: center;
     font-weight: bold;
@@ -81,7 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 
