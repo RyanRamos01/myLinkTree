@@ -13,6 +13,7 @@
     box-sizing: border-box;
     color: var(--font-color);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 body, html{
@@ -50,7 +51,7 @@ body{
 .linksContent{
     display: flex;
     flex-direction: column;
-    margin: 10px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .linksContent a.link{
@@ -59,14 +60,16 @@ body{
     width: 350px;
     height: 100px;
     text-align: center;
-    text-transform: uppercase;
-    margin: 20px auto;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px auto;
     padding: 32px;
     background: var(--font-color);
     color: var(--background-color);
     border: solid 4px var(--font-color);
     border-color: var(--font-color);
     border-radius: 40px 10px;
+    transition: all .2s;
 }
 
 .linksContent a:hover{
